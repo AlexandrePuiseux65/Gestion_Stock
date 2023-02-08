@@ -91,6 +91,12 @@ void copieProd(PROD prdSource, PROD*prDdestination)
     strcpy(prDdestination->designation, prdSource.designation);
     strcpy(prDdestination->nom, prdSource.nom);
     prDdestination->prix = prdSource.prix;
+    prDdestination->detaille_produit.code = prdSource.detaille_produit.code;
+    prDdestination->detaille_produit.QteStq = prdSource.detaille_produit.QteStq;
+    prDdestination->detaille_produit.prix_TVA = prdSource.detaille_produit.prix_TVA;
+    prDdestination->detaille_produit.Date_limite_Data.jour = prdSource.detaille_produit.Date_limite_Data.jour;
+    prDdestination->detaille_produit.Date_limite_Data.mois = prdSource.detaille_produit.Date_limite_Data.mois;
+    prDdestination->detaille_produit.Date_limite_Data.annee = prdSource.detaille_produit.Date_limite_Data.annee;
 }
 
 /*

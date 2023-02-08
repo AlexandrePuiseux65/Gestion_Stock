@@ -11,23 +11,23 @@ ADRE saisir_adresse (void)
 {
     ADRE adrestmp;
     
-    printf("Numero de rue : ");
+    printf("\t ->Numero de rue : ");
     scanf("%d", &adrestmp.Numero_rue);
     fflush(stdin);
     
-    printf("Nom de rue : ");
+    printf("\t ->Nom de rue : ");
     scanf("%s", adrestmp.nomRue);
     fflush(stdin);
     
-    printf("Ville : ");
+    printf("\t ->Ville : ");
     scanf("%s", adrestmp.ville);
     fflush(stdin);
     
-    printf("Code Postale ");
+    printf("\t ->Code Postale : ");
     scanf("%d", &adrestmp.codePostale);
     fflush(stdin);
     
-    printf("Pays : ");
+    printf("\t ->Pays : ");
     scanf("%s", adrestmp.pays);
     fflush(stdin);
     
@@ -35,6 +35,6 @@ ADRE saisir_adresse (void)
 }
 
 void affiche_adresse(ADRE adresse){
-    printf(" %d %s %s %d %s\n", adresse.Numero_rue,adresse.nomRue, adresse.ville, adresse.codePostale, adresse.pays );
+    printf("\n\t ->%d %s %s %d %s\n", adresse.Numero_rue,adresse.nomRue, adresse.ville, adresse.codePostale, adresse.pays );
 }
 

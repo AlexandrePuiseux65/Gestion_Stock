@@ -9,7 +9,7 @@
 /*Fonction d'affichage de produit
 */
 void affiche_produit(PROD prd){
-    printf("%s|%s|%f\n",prd.nom, prd.designation, prd.prix);
+    printf("\t\t• %s | %s | %f | %d | %f %%| %f | %d /%d /%d | \n",prd.nom, prd.designation, prd.prix, prd.detaille_produit.code, prd.detaille_produit.prix_TVA, prd.detaille_produit.QteStq, prd.detaille_produit.Date_limite_Data.jour, prd.detaille_produit.Date_limite_Data.mois, prd.detaille_produit.Date_limite_Data.annee);
 }
 /*
 Fonction d'affichage d'une liste de produit de taille nb
@@ -17,6 +17,7 @@ Cette fonction affiche ‡ partir d'un tableau de produit "listeProd"
 PassÈ en argument de la fonction
 le type de retour est vide (void)
 */
+
 void affiche_liste_produit(PROD* listeProd, int nb){
     int i;
     for(i =0; i< nb;i++ ){
@@ -38,6 +39,22 @@ PROD saisir_produit(void){
     fflush(stdin);
     printf("Introduire le prix : ");
     scanf("%f",&prdtmp.prix);
+    
+    fflush(stdin);
+    printf("Introduire le code du produit : ");
+    scanf("%d", &prdtmp.detaille_produit.code);
+    
+    fflush(stdin);
+    printf("Introduire le taux TVA : ");
+    scanf("%f", &prdtmp.detaille_produit.prix_TVA);
+    
+    fflush(stdin);
+    printf("Introduire la quantite de ce produit (Nombre d unite) : ");
+    scanf("%f", &prdtmp.detaille_produit.QteStq);
+    
+    fflush(stdin);
+    printf("Introduire la date : \n");
+    prdtmp.detaille_produit.Date_limite_Data = saisir_date ();
 
     return prdtmp;
 }

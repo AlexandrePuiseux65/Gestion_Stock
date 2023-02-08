@@ -11,6 +11,7 @@
 		8D563B75299302A6001F80EF /* Menu.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D563B74299302A6001F80EF /* Menu.c */; };
 		8D563B78299308BB001F80EF /* gestion_fourniseur.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D563B77299308BB001F80EF /* gestion_fourniseur.c */; };
 		8D563B7A2993AF2C001F80EF /* gestion_date.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D563B792993AF2C001F80EF /* gestion_date.c */; };
+		8D563B8029942B6B001F80EF /* Tri_fourniseur.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D563B7F29942B6B001F80EF /* Tri_fourniseur.c */; };
 		8D61142F2978326600CCE9CD /* ASCII_plus.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D61142E2978326600CCE9CD /* ASCII_plus.c */; };
 		8DBF91B7296D5D1D000CA18C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF91B6296D5D1D000CA18C /* main.c */; };
 		8DBF91BF296D5D3D000CA18C /* gestion_produit.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF91BE296D5D3D000CA18C /* gestion_produit.c */; };
@@ -35,6 +36,7 @@
 		8D563B74299302A6001F80EF /* Menu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Menu.c; sourceTree = "<group>"; };
 		8D563B77299308BB001F80EF /* gestion_fourniseur.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gestion_fourniseur.c; sourceTree = "<group>"; };
 		8D563B792993AF2C001F80EF /* gestion_date.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gestion_date.c; sourceTree = "<group>"; };
+		8D563B7F29942B6B001F80EF /* Tri_fourniseur.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Tri_fourniseur.c; sourceTree = "<group>"; };
 		8D61142E2978326600CCE9CD /* ASCII_plus.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ASCII_plus.c; sourceTree = "<group>"; };
 		8DBF91B3296D5D1D000CA18C /* Gestion_Stock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gestion_Stock; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DBF91B6296D5D1D000CA18C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				8DBF91C02974B9DB000CA18C /* Tri_par_permu.c */,
+				8D563B7F29942B6B001F80EF /* Tri_fourniseur.c */,
 			);
 			path = Tri;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DBF91C12974B9DB000CA18C /* Tri_par_permu.c in Sources */,
+				8D563B8029942B6B001F80EF /* Tri_fourniseur.c in Sources */,
 				8D563B732992F957001F80EF /* gestion_adresse.c in Sources */,
 				8D563B75299302A6001F80EF /* Menu.c in Sources */,
 				8DBF91C32974C92D000CA18C /* Fichier_sauvegarde.c in Sources */,

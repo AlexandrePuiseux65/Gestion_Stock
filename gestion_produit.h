@@ -14,6 +14,7 @@
 #include <unistd.h>
 
 #define MAX_SIZE_TAB_PRODUIT 100
+#define MAX_NB_PRODUIT 10
 
 //Différente structure que on utilise :
 struct Date{
@@ -59,8 +60,12 @@ struct Fournisseur{
 void tri_liste_produit(int nb, PROD* listeProduit);
 void permutation (PROD* listeProduit, PROD prdTmp, int i, int posimax);
 
+//Code de Tri founiseur
+void tri_liste_fourniseur(int nb, FOUR* listeFouniseur);
+
 //Code pour fichier et la sauvegarde des produit
-void sauvegarde(PROD* listProduit, int nb);
+void sauvegarde(FOUR* listFournisseur, int nb );
+FOUR ouverture(FOUR* listFournisseur, int nb);
 
 //Code Bonnus
 void Chargement(void);
@@ -84,6 +89,20 @@ void affiche_adresse(ADRE adresse);
 //Code Date
 DATE saisir_date (void);
 void affiche_date(DATE datetmp);
+
+//Code Fourniseur
+int rechercher_fourniseur(int nb, FOUR * Fourniseur , FOUR four_recheche );
+void affiche_fourniseur(FOUR Fourniseur);
+void affiche_liste_fourniseur(FOUR* listeFourniseur, int nb);
+FOUR saisir_fourniseur(void);
+void saisir_liste_fourniseur(int nb, FOUR * listeFourniseur);
+void inserer_fourniseur(int nb,FOUR* listeFourniseur, FOUR new_Fourniseur);
+void copieFour(FOUR fourSource, FOUR*fourDdestination);
+int supprimer_fourniseur(int nb, FOUR*listFourniseur, FOUR four_recheche );
+
+//Menu
+FOUR menu_produit (FOUR Fourniseur);
+
 
 
 #endif // GESTION_PRODUIT_H_INCLUDED
